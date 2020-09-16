@@ -1,7 +1,7 @@
 # GALEX UV Plots
 The files in this repo attempt to reproduce Fig. 1 and Fig. 3 from *Components of the Diffuse Ultraviolet Radiation at High Latitudes* (Akshaya et al., 2019)<sup>1</sup>, in the GDL (free clone of IDL) language. They work in tandem with two other scripts<sup>2</sup> written by Prof. Jayant Murthy, ``get_galex_hlsp_data.pro`` and ``create_wcs_map.pro``, who was the mentor for this project.
 
-#TODO: Explain background info. Add image output files.
+#TODO: Explain background info. 
 
 ## Files on this repo
 ``galactic_pole_plot.pro`` attempts to reproduce Fig. 1 in the paper in a window sized 400 x 400. This is a grayscale contour plot of the diffuse (far) ultraviolet radiation at the galactic north pole. The brighter areas correspond to a higher surface brightness, measured in photon units<sup>1</sup>. The concentric circles represent the latitudes 80&deg; (outermost circle), 82&deg;, 84&deg;, 86&deg;, and 88&deg; with 90&deg; N being the point at the centre.
@@ -17,8 +17,14 @@ The files in this repo attempt to reproduce Fig. 1 and Fig. 3 from *Components o
 3. Run ``create_wcs_map`` with ``data=out_sum`` (from step 2) and ``cdelt=0.075``. 
 4. Run ``galactic-pole-plot.pro``. If mapping the diffuse NUV background, replace ``fuv_grid`` in line 4 of the script with ``nuv_grid``.
 
+*Sample FUV output*:<br>
+<p align=center><img src=https://github.com/vibhapadmanabhan/GALEX-UV-Plots/blob/master/Plots/fuv.png></p>
+
 ### Fig. 3
 3. Pass ``out_sum.fuv_final`` or ``out_sum.nuv_final`` and ``out_sum.ir100`` or ``out_sum.ebv`` into ``uv_ir.pro``. Modify lines 23 and 24 of the script to get the desired axis labels.
+
+*Sample GALEX FUV vs. IR 100 &mu;m output*:
+<p align=center><img src=https://github.com/vibhapadmanabhan/GALEX-UV-Plots/blob/master/Plots/fuvir%20(1).png></p>
 
 ## References
 <sup>1</sup>[Components of the Diffuse Ultraviolet Radiation at High Latitudes](https://www.researchgate.net/publication/335061859_Components_of_the_Diffuse_Ultraviolet_Radiation_at_High_Latitudes)<br>
