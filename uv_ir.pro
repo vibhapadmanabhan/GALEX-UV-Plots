@@ -1,4 +1,4 @@
-pro mean_calculator, ir100, fuv_final
+pro uv_ir, ir100, fuv_final
 bins=lonarr(20) ;how many bins to average across
 for i=0, n_elements(bins)-1 do begin
 	count=0
