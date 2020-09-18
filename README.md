@@ -1,8 +1,6 @@
 # GALEX UV Plots
 The files in this repo attempt to reproduce Fig. 1 and Fig. 3 from *Components of the Diffuse Ultraviolet Radiation at High Latitudes* (Akshaya et al., 2019)<sup>1</sup>, in the GDL (free clone of IDL) language. They work in tandem with two other scripts<sup>2</sup> written by Prof. Jayant Murthy, ``get_galex_hlsp_data.pro`` and ``create_wcs_map.pro``, who was the mentor for this project.
 
-#TODO: Explain background info. 
-
 ## Files on this repo
 ``galactic_pole_plot.pro`` attempts to reproduce Fig. 1 in the paper in a window sized 400 x 400. This is a grayscale contour plot of the diffuse (far) ultraviolet radiation at the galactic north pole. The brighter areas correspond to a higher surface brightness, measured in photon units<sup>1</sup>. The concentric circles represent the latitudes 80&deg; (outermost circle), 82&deg;, 84&deg;, 86&deg;, and 88&deg; with 90&deg; N being the point at the centre.
 
